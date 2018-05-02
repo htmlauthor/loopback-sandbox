@@ -1,0 +1,23 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "thing": 5
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "thing": {
+      "1": "{\"name\":\"No-thing\",\"size\":0,\"creationTime\":\"2018-05-02T17:43:18.168Z\",\"id\":1}",
+      "2": "{\"name\":\"Small thing\",\"size\":1,\"creationTime\":\"2018-05-02T14:57:48.899Z\",\"id\":2}",
+      "3": "{\"name\":\"Medium thing\",\"size\":2,\"creationTime\":\"2018-05-02T14:57:48.899Z\",\"id\":3}",
+      "4": "{\"name\":\"Big thing\",\"size\":3,\"creationTime\":\"2018-05-02T14:57:48.899Z\",\"id\":4}"
+    }
+  }
+}

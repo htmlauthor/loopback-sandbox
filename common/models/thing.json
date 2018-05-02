@@ -1,0 +1,63 @@
+{
+  "name": "thing",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "number"
+    },
+    "creationTime": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "testUpdateAttributes": {
+      "accepts": [
+        {
+          "arg": "idToUpdate",
+          "type": "number",
+          "required":true,
+          "description":"Id of a Thing to update",
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "updatedData",
+          "type": "thing",
+          "required": true,
+          "description": "Attributes",
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "data",
+          "type": "object",
+          "root": true,
+          "description": "Output"
+        }
+      ],
+      "description": "For testing updateAttributes",
+      "http": [
+        {
+          "path": "/testUpdateAttributes/:idToUpdate",
+          "verb": "patch"
+        }
+      ]
+    }
+  }
+}
